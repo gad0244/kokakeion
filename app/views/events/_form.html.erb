@@ -1,0 +1,37 @@
+<%= form_with(model: event, local: true) do |form| %>
+  <% if event.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(event.errors.count, "件のエラーがあります") %> </h2>
+
+      <ul>
+      <% event.errors.full_messages.each do |message| %>
+        <li><h3><%= message %></h3></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :名前 %>
+    <%= form.text_field :title %>
+  </div>
+
+  <div class="field">
+    <%= form.label :備考 %>
+    <%= form.text_field :body %>
+  </div>
+
+  <div class="field">
+    <%= form.label :開始 %>
+    <%= form.datetime_select :start_date %>
+  </div>
+
+  <div class="field">
+    <%= form.label :終了 %>
+    <%= form.datetime_select :end_date %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit value="予約" %>
+  </div>
+<% end %>
