@@ -1,0 +1,12 @@
+<div class="wrapper">
+
+  <div class="sub_header">
+    <h1>予約の編集</h1>
+  </div>
+
+  <%= render 'form', event: @event %>
+
+  <%= link_to '詳細', @event, {class: "edit_show_btn"} %> |
+  <%= link_to 'トップ画面へ', events_path, {class: "top_btn"} %>
+
+</div>

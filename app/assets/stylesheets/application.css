@@ -1,0 +1,42 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ *= require fullcalendar
+ */
+
+ body {
+     margin: 0;
+ }
+
+ .header {
+     background-color: #FF0066;
+     padding: 1px 0px;
+ }
+
+ .header h1 {
+     text-align: center;
+     letter-spacing: 2px;
+     font-size: 48px;
+     color: aliceblue;
+ }
+
+.sub_header h1 {
+     color: rgb(95, 95, 95);
+     font-size: 42px;
+     margin: 60px 0;
+}
+
+ #calendar {
+     margin: 20px;
+ }
